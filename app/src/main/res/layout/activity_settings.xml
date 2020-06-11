@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <Switch
+        android:id="@+id/settings_switch_save"
+        android:layout_width="290dp"
+        android:layout_height="46dp"
+        android:text="Others can Save your Photos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/settings_tv_title"
+        app:layout_constraintStart_toStartOf="@+id/settings_tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/settings_tv_title"
+        app:layout_constraintVertical_bias="0.120000005" />
+
+    <Switch
+        android:id="@+id/settings_switch_share"
+        android:layout_width="291dp"
+        android:layout_height="46dp"
+        android:text="Others can Share Your Photos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/settings_switch_save"
+        app:layout_constraintStart_toStartOf="@+id/settings_switch_save"
+        app:layout_constraintTop_toBottomOf="@+id/settings_switch_save"
+        app:layout_constraintVertical_bias="0.13999999" />
+
+    <TextView
+        android:id="@+id/settings_tv_title"
+        android:layout_width="254dp"
+        android:layout_height="62dp"
+        android:fontFamily="@font/almendra_italic"
+        android:text="SETTINGS"
+        android:textAlignment="center"
+        android:textColor="#FFD10000"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.120000005" />
+
+    <Button
+        android:id="@+id/settings_btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/settings_switch_share"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/settings_switch_share"
+        app:layout_constraintTop_toBottomOf="@+id/settings_switch_share" />
+
+    <Button
+        android:id="@+id/settings_btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_btn_save"
+        app:layout_constraintEnd_toEndOf="@+id/settings_switch_share"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/settings_switch_share"
+        app:layout_constraintTop_toTopOf="@+id/settings_btn_save" />
+
+    <EditText
+        android:id="@+id/settings_et_code"
+        android:layout_width="189dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/settings_switch_save"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/settings_switch_share"
+        app:layout_constraintTop_toBottomOf="@+id/settings_switch_share"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <TextView
+        android:id="@+id/settings_tv_code"
+        android:layout_width="83dp"
+        android:layout_height="43dp"
+        android:text="Code:"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_et_code"
+        app:layout_constraintEnd_toStartOf="@+id/settings_et_code"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/settings_switch_share"
+        app:layout_constraintTop_toTopOf="@+id/settings_et_code" />
+</androidx.constraintlayout.widget.ConstraintLayout>

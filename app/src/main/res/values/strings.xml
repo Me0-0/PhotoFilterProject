@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">PhotoFilterProject</string>
+
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
+    <string name="filters">FILTERS</string>
+    <string name="gallery">GALLERY</string>
+    <string name="menu">MENU</string>
+    <string name="camera">CAMERA</string>
+
+    <string name="back_btn">Go Back</string>
+    <string name="exit_btn">Exit</string>
+    <string name="select_btn">Select</string>
+    <string name="cancel_btn">Cancel</string>
+    <string name="login_bnt">Login</string>
+    <string name="register_btn">Register</string>
+    <string name="guest_btn">Guest</string>
+    <string name="filters_btn">Filters</string>
+    <string name="regular_filters_btn">Regular Filters</string>
+    <string name="premium_filters_btn">Premium Filters</string>
+    <string name="share_btn">Share to WhatsApp</string>
+    <string name="save_btn">Save</string>
+    <string name="gallery_btn">Gallery</string>
+
+    <string name="example1_tv">Example 1</string>
+    <string name="example2_tv">Example 2</string>
+
+
+</resources>

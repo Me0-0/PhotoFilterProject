@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/main_iv_appicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07999998"
+        app:srcCompat="@drawable/photo_filter_app_icom" />
+
+    <TextView
+        android:id="@+id/main_tv_title"
+        android:layout_width="226dp"
+        android:layout_height="36dp"
+        android:fontFamily="@font/almendra_italic"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="#FFD10000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/main_iv_appicon"
+        app:layout_constraintStart_toStartOf="@+id/main_iv_appicon"
+        app:layout_constraintTop_toBottomOf="@+id/main_iv_appicon"
+        app:layout_constraintVertical_bias="0.060000002" />
+
+    <Button
+        android:id="@+id/main_btn_login"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="235dp"
+        android:layout_height="56dp"
+        android:text="@string/login_bnt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/main_iv_appicon"
+        app:layout_constraintStart_toStartOf="@+id/main_iv_appicon"
+        app:layout_constraintTop_toBottomOf="@+id/main_tv_title"
+        app:layout_constraintVertical_bias="0.120000005" />
+
+    <Button
+        android:id="@+id/main_btn_register"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="235dp"
+        android:layout_height="56dp"
+        android:text="@string/register_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/main_btn_login"
+        app:layout_constraintStart_toStartOf="@+id/main_btn_login"
+        app:layout_constraintTop_toBottomOf="@+id/main_btn_login"
+        app:layout_constraintVertical_bias="0.18" />
+
+    <Button
+        android:id="@+id/main_btn_guest"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="235dp"
+        android:layout_height="56dp"
+        android:text="@string/guest_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/main_btn_login"
+        app:layout_constraintStart_toStartOf="@+id/main_btn_login"
+        app:layout_constraintTop_toBottomOf="@+id/main_btn_register"
+        app:layout_constraintVertical_bias="0.32" />
+</androidx.constraintlayout.widget.ConstraintLayout>

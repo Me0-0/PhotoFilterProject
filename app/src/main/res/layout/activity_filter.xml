@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FilterActivity">
+
+    <Switch
+        android:id="@+id/filter_switch_filters"
+        android:layout_width="145dp"
+        android:layout_height="35dp"
+        android:text="RegularFilters"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/filter_tv_filter"
+        app:layout_constraintStart_toStartOf="@+id/filter_tv_filter"
+        app:layout_constraintTop_toBottomOf="@+id/filter_tv_filter"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+    <Button
+        android:id="@+id/filter_btn_camera"
+        android:layout_width="89dp"
+        android:layout_height="66dp"
+        android:background="@android:drawable/ic_menu_camera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/filter_tv_filter"
+        app:layout_constraintStart_toStartOf="@+id/filter_tv_filter"
+        app:layout_constraintTop_toBottomOf="@+id/filter_switch_filters"
+        app:layout_constraintVertical_bias="0.17000002" />
+
+    <TextView
+        android:id="@+id/filter_tv_filter"
+        android:layout_width="225dp"
+        android:layout_height="31dp"
+        android:fontFamily="@font/almendra_italic"
+        android:text="None"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/filter_tv_title"
+        app:layout_constraintStart_toStartOf="@+id/filter_tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/filter_iv_view"
+        app:layout_constraintVertical_bias="0.120000005" />
+
+    <TextView
+        android:id="@+id/filter_tv_title"
+        android:layout_width="205dp"
+        android:layout_height="41dp"
+        android:fontFamily="@font/almendra_italic"
+        android:text="@string/filters"
+        android:textAlignment="center"
+        android:textColor="#D10000"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.050000012" />
+
+    <Button
+        android:id="@+id/filter_btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/filter_btn_camera"
+        app:layout_constraintEnd_toEndOf="@+id/filter_btn_right"
+        app:layout_constraintStart_toEndOf="@+id/filter_btn_camera"
+        app:layout_constraintTop_toTopOf="@+id/filter_btn_camera" />
+
+    <Button
+        android:id="@+id/filter_btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/filter_btn_save"
+        app:layout_constraintEnd_toStartOf="@+id/filter_btn_camera"
+        app:layout_constraintStart_toStartOf="@+id/filter_btn_left"
+        app:layout_constraintTop_toTopOf="@+id/filter_btn_save" />
+
+    <ImageView
+        android:id="@+id/filter_iv_view"
+        android:layout_width="374dp"
+        android:layout_height="362dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filter_tv_title"
+        app:layout_constraintVertical_bias="0.07999998" />
+
+    <ImageButton
+        android:id="@+id/filter_btn_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/filter_tv_filter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/filter_tv_filter"
+        app:layout_constraintTop_toTopOf="@+id/filter_tv_filter"
+        app:srcCompat="@android:drawable/ic_media_ff" />
+
+    <ImageButton
+        android:id="@+id/filter_btn_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/filter_tv_filter"
+        app:layout_constraintEnd_toStartOf="@+id/filter_tv_filter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/filter_tv_filter"
+        app:srcCompat="@android:drawable/ic_media_rew" />
+
+    <Button
+        android:id="@+id/filter_btn_example1"
+        android:layout_width="88dp"
+        android:layout_height="44dp"
+        android:fontFamily="@font/almendra_italic"
+        android:text="@string/example1_tv"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/filter_btn_cancel"
+        app:layout_constraintEnd_toStartOf="@+id/filter_switch_filters"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filter_btn_left" />
+
+    <Button
+        android:id="@+id/filter_btn_example2"
+        android:layout_width="88dp"
+        android:layout_height="44dp"
+        android:fontFamily="@font/almendra_italic"
+        android:text="@string/example2_tv"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/filter_btn_save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/filter_switch_filters"
+        app:layout_constraintTop_toBottomOf="@+id/filter_btn_right" />
+
+    <Button
+        android:id="@+id/filter_btn_back"
+        android:layout_width="104dp"
+        android:layout_height="38dp"
+        android:text="@string/back_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/filter_btn_camera"
+        app:layout_constraintStart_toStartOf="@+id/filter_btn_camera"
+        app:layout_constraintTop_toBottomOf="@+id/filter_btn_camera"
+        app:layout_constraintVertical_bias="0.19" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

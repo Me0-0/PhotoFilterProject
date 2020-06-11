@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/register_tv_title"
+        android:layout_width="248dp"
+        android:layout_height="55dp"
+        android:fontFamily="@font/almendra_italic"
+        android:text="@string/register"
+        android:textAlignment="center"
+        android:textColor="#D10000"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+    <EditText
+        android:id="@+id/register_et_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/register_tv_title"
+        app:layout_constraintStart_toStartOf="@+id/register_tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/register_tv_title"
+        app:layout_constraintVertical_bias="0.13999999"
+        android:hint="Username"/>
+
+    <EditText
+        android:id="@+id/register_et_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/register_et_username"
+        app:layout_constraintStart_toStartOf="@+id/register_et_username"
+        app:layout_constraintTop_toBottomOf="@+id/register_et_username"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <Button
+        android:id="@+id/register_btn_register"
+        android:layout_width="158dp"
+        android:layout_height="54dp"
+        android:text="@string/register_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/register_et_password"
+        app:layout_constraintStart_toStartOf="@+id/register_et_password"
+        app:layout_constraintTop_toBottomOf="@+id/register_et_password"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <Button
+        android:id="@+id/register_btn_back"
+        android:layout_width="158dp"
+        android:layout_height="54dp"
+        android:text="@string/back_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/register_btn_register"
+        app:layout_constraintStart_toStartOf="@+id/register_btn_register"
+        app:layout_constraintTop_toBottomOf="@+id/register_btn_register"
+        app:layout_constraintVertical_bias="0.25" />
+</androidx.constraintlayout.widget.ConstraintLayout>

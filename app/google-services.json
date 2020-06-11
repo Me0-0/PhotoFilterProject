@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "80936796655",
+    "firebase_url": "https://photofilterproject.firebaseio.com",
+    "project_id": "photofilterproject",
+    "storage_bucket": "photofilterproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:80936796655:android:2a6b974c2242781eeef61a",
+        "android_client_info": {
+          "package_name": "com.example.photofilterproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "80936796655-9mha2b39ng13qq38p34lf9m9ihp35bg8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdm3xfWE9yv9iEhJl-zuW3SRBYHid75VU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "80936796655-9mha2b39ng13qq38p34lf9m9ihp35bg8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
